@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 24</title>
+</head>
+<body>
+
+    <h2>Question 24: Object Destructuring</h2>
+
+    <p id="output"></p>
+
+    <script>
+        let person = {
+            name: "Mohan",
+            role: "Software Developer",
+            location: "Chennai"
+        };
+
+        let { name, role, location } = person;
+
+        document.getElementById("output").innerHTML =
+            "Name: " + name + "<br>" +
+            "Role: " + role + "<br>" +
+            "Location: " + location;
+
+        console.log("Name: " + name);
+        console.log("Role: " + role);
+        console.log("Location: " + location);
+    </script>
+
+</body>
+</html>

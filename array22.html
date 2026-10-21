@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 22</title>
+</head>
+<body>
+
+    <h2>Question 22: Nested Array Destructuring</h2>
+
+    <script>
+        let nested = [1, 2, [3, 4, [5, 6]]];
+
+        let [a, b, [c, d, [e, f]]] = nested;
+
+        console.log("a = " + a);
+        console.log("b = " + b);
+        console.log("c = " + c);
+        console.log("d = " + d);
+        console.log("e = " + e);
+        console.log("f = " + f);
+
+        document.write("a = " + a + "<br>");
+        document.write("b = " + b + "<br>");
+        document.write("c = " + c + "<br>");
+        document.write("d = " + d + "<br>");
+        document.write("e = " + e + "<br>");
+        document.write("f = " + f);
+    </script>
+
+</body>
+</html>

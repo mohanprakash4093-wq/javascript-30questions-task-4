@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 10</title>
+</head>
+<body>
+    <h2>Question 10: flat(Infinity)</h2>
+    <p id="output"></p>
+
+    <script>
+        let arr = [1, [2, 3], [4, [5, 6]], 7];
+
+        let result = arr.flat(Infinity);
+
+        console.log(result);
+        document.getElementById("output").innerHTML = result.join(", ");
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 6</title>
+</head>
+<body>
+    <h2>Question 6: Replace Using splice()</h2>
+    <p id="output"></p>
+
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+
+        arr.splice(2, 1, 100);
+
+        console.log(arr);
+        document.getElementById("output").innerHTML = arr.join(", ");
+    </script>
+</body>
+</html>

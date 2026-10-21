@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 29</title>
+</head>
+<body>
+
+    <h2>Question 29: Merge Employee Objects</h2>
+
+    <p id="output"></p>
+
+    <script>
+        let employee1 = {
+            name: "Mohan",
+            age: 21
+        };
+
+        let employee2 = {
+            role: "Software Developer",
+            company: "ABC Company"
+        };
+
+        let employee = { ...employee1, ...employee2 };
+
+        let { name, role } = employee;
+
+        console.log("Employee Name: " + name);
+        console.log("Employee Role: " + role);
+
+        document.getElementById("output").innerHTML =
+            "Employee Name: " + name + "<br>" +
+            "Employee Role: " + role;
+    </script>
+
+</body>
+</html>

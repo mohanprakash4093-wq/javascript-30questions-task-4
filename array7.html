@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 7</title>
+</head>
+<body>
+    <h2>Question 7: fill()</h2>
+    <p id="output"></p>
+
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+
+        numbers.fill("hello", 2, 4);
+
+        console.log(numbers);
+        document.getElementById("output").innerHTML = numbers.join(", ");
+    </script>
+</body>
+</html>

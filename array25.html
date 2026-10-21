@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Question 25</title>
+</head>
+<body>
+
+    <h2>Question 25: Nested Object Destructuring</h2>
+
+    <p id="output"></p>
+
+    <script>
+        let student = {
+            name: "Mohan",
+            address: {
+                city: "Chennai",
+                state: "Tamil Nadu"
+            }
+        };
+
+        let {
+            address: { city, state }
+        } = student;
+
+        document.getElementById("output").innerHTML =
+            "City: " + city + "<br>" +
+            "State: " + state;
+
+        console.log("City: " + city);
+        console.log("State: " + state);
+    </script>
+
+</body>
+</html>
